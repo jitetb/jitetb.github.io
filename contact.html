@@ -1,0 +1,27 @@
+---
+layout: default
+title: Contact
+---
+<link rel="stylesheet" type="text/css" href="./static/contact.css">
+<script type="text/javascript">
+    $('body').addClass('bg-info');
+</script>
+{%- comment -%}
+<!--div class="container-fluid bg-secondary" id="news" style="min-height: 10pc; padding-top: 5pc;"></div-->
+{%- endcomment -%}
+<div class="container text-white" id="contact" style="padding-top: 5pc;">
+    <h1 class="text-center text-white py-3">Contact Us</h1>
+    <div class="row px-3">
+        {%- for address in site.data.contact -%}
+        <div class="col-12 col-sm-6 col-lg-4">
+            <h2 class="py-3">{{address.type}}</h2>
+            {%- for item in address.items -%}
+            <div class="media">
+                <span class="m-3 contact-info {{item.type}}"></span>
+                <div class="media-body my-3">{{item.data}}</div>
+            </div>
+            {%- endfor -%}
+        </div>
+        {%- endfor -%}
+    </div>
+</div>

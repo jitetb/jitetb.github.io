@@ -1,0 +1,34 @@
+[{
+    "type": "Corporate Office",
+    "items": [{
+        "type": "location",
+        "data": "House 67/C Road 6/A <br />Cantonment R.A. <br />Dhaka Cantonment Dhaka"
+    }, {
+        "type": "telephone",
+        "data": "+880 171 681 4208"
+    }]
+}, {
+    "type": "Mymensingh Office",
+    "items": [{
+        "type": "location",
+        "data": "House 196/A <br />R.K. Misson Road <br />Mymensingh"
+    }, {
+        "type": "telephone",
+        "data": "+880 173 299 8295"
+    }]
+}, {
+    "type": "Social Network",
+    "items": [{
+        "type": "email",
+        "data": "jitbdgroup@gmail.com"
+    }, {
+        "type": "wechat",
+        "data": "+880 153 517 4014"
+    }, {
+        "type": "whatsapp",
+        "data": "+880 153 517 4014"
+    }, {
+        "type": "viber",
+        "data": "+880 153 517 4014"
+    }]
+}]

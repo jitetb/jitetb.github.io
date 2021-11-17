@@ -1,0 +1,26 @@
+CACHE MANIFEST
+# <html manifest="cache.appcache">
+/static/logo/favicon.svg
+/index.html
+/news.html
+/contact.html
+/catalog.html
+/about.html
+/404.html
+/favicon.ico
+/static/index.css
+/static/contact.css
+/static/logo_bk.jpg
+/static/logo_gr.jpg
+/static/logo/customers/world-bank.svg
+/static/logo/customers/BGMEA.png
+/static/logo/customers/Bashundhara.png
+/static/logo/customers/DOHS.png
+/static/logo/customers/uttara_11.png
+/static/logo/customers/uttara_14.png
+/static/logo/suppliers/fujihd.png
+/static/logo/suppliers/movilift.png
+/static/logo/suppliers/srl.png
+/static/logo/suppliers/xiwei.png
+/static/news_img/ea7.jpg
+/static/news_img/nemi.png

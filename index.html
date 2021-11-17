@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+<link rel="stylesheet" type="text/css" href="/static/index.css">
+{% for brand in site.data.partners %}
+{%- capture style -%}
+style = "background-color: {% cycle '#D7E1E1', '#E4DCC6' %};"
+{%- endcapture -%}
+<div {{style}}>
+    <div class="container pre-animate post-animate">
+        <h1 class="text-center py-3">{{brand.title}}</h1>
+        <div class="d-flex align-items-center" id={{brand.type}}>
+            {%- for i in (1..2) -%}
+            {%- for logo in brand.list -%}
+            {% capture logoName %}"/static/logo/{{brand.type}}/{{logo.img}}"{% endcapture %}
+            <a href="{{logo.link}}" target="blank"><img src={{ logoName }} loading="lazy" alt="{{ logo.img | split: "." | first }}"></a>
+            {%- endfor -%}
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+{% endfor %}

@@ -1,0 +1,64 @@
+{%- capture navClass -%}
+"navbar navbar-expand-lg navbar-dark bg-danger{% if page.url != '/' %} fixed-top{% endif %}"
+{%- endcapture -%}
+<style>
+    body {
+        font-family: Arimo;
+    }
+</style>
+<nav class={{ navClass }}>
+    <div class="container">
+        <style scoped>
+            .navbar-brand {
+                background-image: url(./static/logo/logo_gr.jpg);
+                min-width: 4rem;
+                min-height: 4rem;
+                background-repeat: no-repeat;
+                background-size: 2rem;
+                text-indent: 2.5rem;
+                padding-top: 0.9rem;
+                font-weight: bolder;
+                font-size: 1.5rem;
+                background-position-y: center;
+            }
+
+            @media (max-width: 374px) {
+                .navbar-brand {
+                    padding-top: 0.9rem;
+                    font-size: 1.5rem;
+                    background-size: 2rem;
+                    text-indent: 2.5rem;
+                }
+            }
+
+            @media (min-width: 375px) {
+                .navbar-brand {
+                    padding-top: 0.5rem;
+                    font-size: 2rem;
+                    background-size: 4rem;
+                    text-indent: 4.5rem;
+                }
+            }{% if page.url != '/' %}
+            
+            @media (max-width: 991px) {
+                #navbarSupportedContent {
+                    position: fixed;
+                    top: 5pc; right: 0px; left: 0px;
+                    background-color: rgba(240, 128, 128, 0.8);
+                }
+            }{% endif %}
+        </style>
+        <a class="navbar-brand mx-auto" href="/index.html">JIT ETB LTD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ml-auto">
+                {%- for item in site.data.navigation -%}
+                <a class="nav-item border border-light bg-danger text-white m-1 px-3 py-2 rounded text-decoration-none" href="{{ item.link }}">{{ item.name }}</a>
+                {%- endfor -%}
+                <a class="nav-item border border-light bg-warning m-1 px-3 py-2 rounded text-decoration-none" href="https://forms.gle/Hvs7o597eUcurnhq8">Get Price</a>
+            </div>
+        </div>
+    </div>
+</nav>

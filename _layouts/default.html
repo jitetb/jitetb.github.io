@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    {%- comment -%}
+    <meta http-equiv="refresh" content="3600">
+    {%- endcomment -%}
+    <meta name="author" content="JITETB LIMITED">
+    <meta name="generator" content="Jekyll static site generator">
+    <meta name="keywords" content="lift, elevator, elevetor, jitetbltd, escalator, generator, JITETBLTD, JITETB, just in time engineering and technology bangladesh">
+    <meta name="description" content="JIT ETB Limited is a technology company in Bangladesh. We import lift, elevator and escalator from Europe and China.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>{{ page.title }}</title>
+    <link rel="icon" href="./static/logo/favicon.svg" sizes="any" type="image/svg+xml">
+    <meta name="google-site-verification" content="Th0tRkafW3AP4TTrON201wk2MhFaGfq7OSFwvoTNgbk" />
+</head>
+
+<body {% if page.url == '/' %}class = "vh-100 bg-success"{% endif %}>
+    {%- include navigation.html -%}
+    {{ content }}
+    <!--
+    <div class="container-fluid bg-success">
+        <p class="text-white text-center py-2 my-0">JITETB Ltd &reg; All rights reserved</p>
+    </div>
+    -->
+    {%- comment -%}
+    {%- include footnav.html -%}
+    {%- endcomment -%}
+</body>
+
+</html>

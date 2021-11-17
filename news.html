@@ -1,0 +1,44 @@
+---
+layout: default
+title: News
+---
+<div class="container" style="padding-top: 5pc;">
+    <h1 class="text-center py-3">News</h1>
+    <div class="accordion" id="news">
+        <style scoped>
+            .card-body>img {
+                float: left;
+                width: -webkit-fill-available;
+                width: -moz-available;
+                width: stretch;
+                margin-bottom: 1rem;
+            }
+
+            @media (min-width: 420px) {
+                .card-body>img {
+                    float: right;
+                    width: 10rem;
+                }
+            }
+        </style>
+        {%- for news in site.data.news -%}
+        <div class="card">
+            <div class="card-header" id="heading{{news.serial}}">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="" aria-expanded="true" aria-controls="">
+                        {{news.title}}
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapse{{news.serial}}" class="collapse show" aria-labelledby="heading{{news.serial}}" data-parent="">
+                <div class="card-body">
+                    {%- capture imgSrc -%}"./static/news_img/{{news.image}}"{%- endcapture -%}
+                    <img src={{ imgSrc }} align="right"  alt="{{ news.alt }}"/>
+                    {{news.body}}
+                </div>
+            </div>
+        </div>
+        {%- endfor -%}
+    </div>
+</div>

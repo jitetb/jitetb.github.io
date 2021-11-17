@@ -1,0 +1,58 @@
+@media only screen and (max-width: 991px) {
+    #navbarSupportedContent {
+        /* same as fixed top */
+        position: fixed;
+        top: 5pc;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        /* lightcoral with 80% opacity */
+        background-color: #f08080cc
+    }
+}
+
+body>div {
+    height: 44%;
+}
+
+.pre-animate {
+    height: 100%;
+}
+
+.pre-animate>div>a>img {
+    padding: 1em;
+}
+
+#customers>a>img {
+    /* readable but not smooth on safari only */
+    /* works fine on all chromium browsers */
+    height: 7em;
+    object-fit: contain;
+    /* smooth but not readable across browsers
+    width: 12em; */
+}
+
+#suppliers>a>img {
+    width: 16em;
+}
+
+.post-animate {
+    overflow: hidden;
+    position: relative;
+}
+
+.post-animate>div {
+    height: 50%;
+    position: absolute;
+    animation: scroll-left 15s linear 1s infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(1%);
+    }
+
+    to {
+        transform: translateX(-49%);
+    }
+}

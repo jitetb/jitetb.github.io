@@ -1,0 +1,21 @@
+[{
+        "name": "Home",
+        "link": "/"
+    },
+    {
+        "name": "About",
+        "link": "/about.html"
+    },
+    {
+        "name": "Catalogue",
+        "link": "/catalog.html"
+    },
+    {
+        "name": "News",
+        "link": "/news.html"
+    },
+    {
+        "name": "Contact",
+        "link": "/contact.html"
+    }
+]
