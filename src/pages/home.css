@@ -1,0 +1,19 @@
+@keyframes suppliers-animation {
+    from {
+        translateX: translateX(0pc);
+    }
+
+    to {
+        transform: translateX(-95pc);
+    }
+}
+
+@keyframes customers-animation {
+    from {
+        translateX: translateX(0pc);
+    }
+
+    to {
+        transform: translateX(-104pc);
+    }
+}
