@@ -3,7 +3,7 @@ import { BsTelephoneFill } from 'react-icons/bs';
 import { ImLocation } from 'react-icons/im';
 import { MdEmail } from 'react-icons/md';
 import { SiWechat, SiWhatsapp, SiViber } from 'react-icons/si';
-import { createElement as e } from 'react';
+import React, { createElement as e } from 'react';
 const contacts = [{
     "branch": "Corporate Office",
     "address": [{
@@ -57,11 +57,12 @@ function MediaCard({ icon, value }){
 const contact_details = contacts.map(
     ({ branch, address }) => {
         // const point_of_contact = details.map();
-        return (<Col xs={10} sm={5} lg={3} style={{ paddingTop: "1rem" }}>
+        return (
+        <Col key={branch} xs={10} sm={5} lg={3} style={{ paddingTop: "1rem" }}>
             <h2 className="text-center">{ branch }</h2>
             {
                 address.map(
-                    ({ icon, value }) => <MediaCard icon={icon} value={value} />
+                    ({ icon, value }, idx) => <MediaCard key={branch + idx} icon={icon} value={value} />
                 )
             }
         </Col>);
@@ -70,9 +71,9 @@ const contact_details = contacts.map(
 
 function Contact(){
     return (
-        <Container style={{ minHeight: "100vh", paddingTop: "1rem" }}>
-            <h1 className="text-center">Contact Us</h1>
-            <Row className="justify-content-center">
+        <Container>
+            <h1 className="text-center pt-5 pb-3">Contact Us</h1>
+            <Row className="justify-content-around pb-3">
                 { contact_details }
             </Row>
         </Container>

@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media only screen and (min-height: 480px) and (min-width: 600px){
+	#root {
+		display: flex !important;
+	}
+	#root>nav {
+		flex-direction: column;
+		height: 100vh !important;
+		padding: 1rem !important;
+	}
+	#root>div {
+		height: 100vh !important;
+	}
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media only screen and (min-height: 600px){
+	#root>div {
+		overflow: auto scroll;
+	}
+}
+@media only screen and (min-width: 250px){
+	/* 250px can accomodate upto 5 nav-items vertically in nav */
+	/* 360px can accomodate upto 10 nav-items vertically in nav */
+	/* 470px can accomodate upto 15 nav-items vertically in nav */
+	:root {
+		--horizontal-navbar-height: 13rem;
+	}
+	#root>nav {
+		height: var(--horizontal-navbar-height);
+	}
+	#root>div {
+		height: calc(100vh - var(--horizontal-navbar-height));
+		width: 100%;
+	}
+	#root>nav>nav {
+		flex-direction: column;
+	}
 }

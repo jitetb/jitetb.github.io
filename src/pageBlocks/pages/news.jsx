@@ -1,5 +1,5 @@
-import { Container } from 'react-bootstrap';
-const image_repo = require.context("./news_images/", true);
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 const news = [
     {
     "heading": "Elevator Analysis and Monitoring Tester",
@@ -17,24 +17,24 @@ const news = [
 
 const blog = news.map(
     ({ heading, image, title, body }) => {
-        const image_object = image_repo(`./${image}`).default;
+        const image_object = require("./news_images/" + image);
         return (
-        <div class="row pt-3 justify-content-center">
-            <div class="col-8 col-sm-3 pb-3">
-                <img src={image_object} alt={title} style={{ width: "100%" }} />
-            </div>
-            <div class="col col-sm-10 col-lg-8">
+        <Row key={title + Math.floor(Math.random() * 100)} className="pb-5 justify-content-center">
+            <Col xs={8} sm={3} className="pb-3">
+                <img src={image_object} alt={title} style={{ width: "90%" }} />
+            </Col>
+            <Col sm={10} lg={8}>
                 <h3>{heading}</h3>
                 {body}
-            </div>
-        </div>
+            </Col>
+        </Row>
         );
     }
 );
 function News(){
     return (
-        <Container style={{ minHeight: "100vh", paddingTop: "1rem" }}>
-            <h1 className="text-center">News</h1>
+        <Container>
+            <h1 className="text-center py-5">News</h1>
             { blog }
         </Container>
     );
