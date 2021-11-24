@@ -11,17 +11,15 @@
 		height: 100vh !important;
 	}
 }
-@media only screen and (min-height: 600px){
-	#root>div {
-		overflow: auto scroll;
-	}
-}
-@media only screen and (min-width: 250px){
 	/* 250px can accomodate upto 5 nav-items vertically in nav */
 	/* 360px can accomodate upto 10 nav-items vertically in nav */
 	/* 470px can accomodate upto 15 nav-items vertically in nav */
+@media only screen and (min-height: 600px) and (min-width: 328px){
 	:root {
 		--horizontal-navbar-height: 13rem;
+	}
+	#root>div {
+		overflow: auto scroll;
 	}
 	#root>nav {
 		height: var(--horizontal-navbar-height);
@@ -29,6 +27,11 @@
 	#root>div {
 		height: calc(100vh - var(--horizontal-navbar-height));
 		width: 100%;
+	}
+}
+@media only screen and (min-width: 328px){
+	#root>nav>span {
+		margin-right: auto !important;
 	}
 	#root>nav>nav {
 		flex-direction: column;

@@ -12,7 +12,7 @@ export default function Navigation({routes, UpdateContext}){
 	));
 	return (
 	<nav className="navbar navbar-light bg-light justify-content-end">
-	  	<span className="mb-auto me-auto">
+	  	<span className="mb-auto">
   			<img src="favicon.svg" alt="jitetb logo"/>
   			<p className="h1 text-center text-uppercase">jitetb</p>
 	  	</span>
