@@ -47,26 +47,37 @@
         "list": [
             {
                 "image": "world-bank.svg",
+                "title" : "World Bank",
                 "link": "https://www.worldbank.org/en/country/bangladesh"
             },
             {
                 "image": "BGMEA.png",
+                "title" : "BGMEA",
                 "link": "https://www.bgmea.com.bd/"
             },
             {
                 "image": "Bashundhara-city.png",
+                "title" : "Bashundhara City",
                 "link": "http://www.bashundhara-city.com/"
             },
             {
+                "image" : "DGDP.png",
+                "title" : "DGDP",
+                "link" : "https://dgdp.gov.bd/"
+            },
+            {
                 "image": "DOHS.png",
+                "title" : "DOHS",
                 "link": "http://www.dohsbaridhara.com/"
             },
             {
-                "image": "uttara_11.png",
+                "image": "uttara-11.png",
+                "title" : "Uttara Sector 11 Kallyan Samity",
                 "link": "https://www.facebook.com/Uttara-11no-Sector-Kallyan-Samity-1590375364591003/"
             },
             {
-                "image": "uttara_14.png",
+                "image": "uttara-14.png",
+                "title" : "Uttara Sector 14",
                 "link": "https://www.facebook.com/groups/686404912058826/"
             }
         ]
