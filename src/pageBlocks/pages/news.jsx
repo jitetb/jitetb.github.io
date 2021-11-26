@@ -16,10 +16,10 @@ const news = [
 ];
 
 const blog = news.map(
-    ({ heading, image, title, body }) => {
+    ({ heading, image, title, body }, idx) => {
         const image_object = require("./news_images/" + image);
         return (
-        <Row key={title + Math.floor(Math.random() * 100)} className="pb-5 justify-content-center">
+        <Row key={title + idx} className="pb-5 justify-content-center">
             <Col xs={8} sm={3} className="pb-3">
                 <img src={image_object} alt={title} style={{ width: "90%" }} />
             </Col>

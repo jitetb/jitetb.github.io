@@ -1,31 +1,29 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { Profiles } from './business_connections/profiles'
-const suppliers = Profiles.suppliers;
-function Catalog(){
-		const list_of_partners = suppliers.map(
-		({ image, link, title, catalog }) => {
-            const file_link = "https://drive.google.com/file/d/" + catalog + "/view?usp=sharing";
+import { suppliers } from './business_connections/profiles';
+
+function Catalog() {
+    const list_of_partners = suppliers.map(
+        ({ image, link, title, catalog }) => {
             return (
-                <Col key={'catalog' + title} sm={12} md={5}>
+                <Col key={'catalog' + title} sm={12} md={5} lg={4}>
                     <Card className="m-3">
-                        <a href={link}><Card.Img src={image} variant="top" alt={title} /></a>
+                        <a href={catalog}><Card.Img src={image} variant="top" alt={title} /></a>
                         <Card.Body>
                             <Card.Title>&nbsp;{title}</Card.Title>
-                            <Button variant="outline-warning" target="_blank" href={file_link}>Download</Button>
+                            <Button variant="outline-warning" target="_blank" href={link}>Visit Site</Button>
+                            <Button variant="warning" target="_blank" href={catalog} className="ms-3">Download</Button>
                         </Card.Body>
                     </Card>
                 </Col>
             );
-		});
+        });
     return (
-        <Container fluid bg="light">
-            <Container>
-                <h1 className="text-center py-5">Catalogues</h1>
-                <Row className="justify-content-center">
+        <Container>
+            <h1 className="text-center py-5">Catalogues</h1>
+            <Row className="justify-content-center px-lg-5">
                 {list_of_partners}
-                </Row>
-            </Container>
+            </Row>
         </Container>
     );
 }
