@@ -7,14 +7,16 @@ file_type: "/view?usp=sharing"
 <div class="container-fluid" id="catalogue" style="padding-top: 5pc;background-color: darkturquoise;">
     <div class="row justify-content-center py-3">
         <h1 class="text-white text-center w-100 py-3">Catalogues</h1>
-        {%- assign supplier = site.data.partners[0] -%} {%- comment -%} {%- assign supplier = site.data.partners | find : "type", "suppliers" -%} {%- endcomment -%}
+        {%- assign supplier = site.data.partners[0] -%} {%- comment -%} {%- assign supplier = site.data.partners | find
+        : "type", "suppliers" -%} {%- endcomment -%}
         {%- for item in supplier.list -%}
         <div class="card col-sm-4 m-3" style="width: 18rem;">
-            <a href="{{item.link}}"><img src="/static/logo/suppliers/{{item.img}}" class="card-img-top" alt="{{item.alt}}"></a>
+            <a href="{{item.link}}"><img src="/static/logo/suppliers/{{item.image}}" class="card-img-top"
+                    alt="{{item.alt}}"></a>
             <div class="card-body">
                 <h5 class="card-title">&nbsp;{{item.title}}</h5>
                 {%- capture file_link -%}
-                "{{page.file_server}}{{item.catalog}}{{page.file_type}}"
+                "{{supplier.catalog-server.prefix}}{{item.catalog}}{{supplier.catalog-server.suffix}}"
                 {%- endcapture -%}
                 <a class="btn btn-outline-warning" target="_blank" href={{file_link}}>Download</a>
             </div>

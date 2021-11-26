@@ -13,8 +13,8 @@ style = "background-color: {% cycle '#D7E1E1', '#E4DCC6' %};"
         <div class="d-flex align-items-center" id={{brand.type}}>
             {%- for i in (1..2) -%}
             {%- for logo in brand.list -%}
-            {% capture logoName %}"/static/logo/{{brand.type}}/{{logo.img}}"{% endcapture %}
-            <a href="{{logo.link}}" target="blank"><img src={{ logoName }} loading="lazy" alt="{{ logo.img | split: "." | first }}"></a>
+            {% capture logoName %}"/static/logo/{{brand.type}}/{{logo.image}}"{% endcapture %}
+            <a href="{{logo.link}}" target="blank"><img src={{ logoName }} loading="lazy" alt="{{ logo.img | split: " ." | first }}"></a>
             {%- endfor -%}
             {%- endfor -%}
         </div>

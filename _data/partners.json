@@ -1,57 +1,74 @@
-[{
-    "type": "suppliers",
-    "title": "Our Principals",
-    "list": [{
-        "img" : "fujihd.png",
-        "link" : "https://www.fujihd.com/",
-        "alt": "FujiHD",
-        "title": "FujiHD",
-        "catalog": "1cOJQPO-7G5xd_drjQrm--lWeYmdS6UuJ"
-        },{
-        "img" : "movilift.png",
-        "link" : "https://www.movilift.com/",
-        "alt": "MoviLift",
-        "title": "Movi Lift",
-        "catalog": "1e8aAu1kpqoK3aLEGweEfXT4me-AFKfHt"
-        },{
-        "img" : "srl.png",
-        "link" : "https://www.srlelevator.com/",
-        "alt": "SRL",
-        "title": "SRL",
-        "catalog": "133qlDgHkSi0ad6yyFktuzOT_KefcrLzn"
-        },{
-        "img" : "xiwei.png",
-        "link" : "https://www.xiweielevator.com/",
-        "alt": "XIWEI",
-        "title": "XIWEI",
-        "catalog": "1i1qfJqBYbv63VhmQCOgwhxd02YUPv3wE"
-        },{
-        "img" : "hasasansor.png",
-        "link" : "https://www.hasasansor.com.tr/",
-        "alt": "HAS Elevator",
-        "title": "HAS Elevator",
-        "catalog": "1r5EoDXaIxul-hqm1_wMyGKfIbHEgaGtL"
-        }]
-},{
-    "type": "customers",
-    "title": "Our Clients",
-    "list": [{
-        "img" : "world-bank.svg",
-        "link" : "https://www.worldbank.org/en/country/bangladesh"
-        },{
-        "img" : "BGMEA.png",
-        "link" : "https://www.bgmea.com.bd/"
-        },{
-        "img" : "Bashundhara-city.png",
-        "link" : "http://www.bashundhara-city.com/"
-        },{
-        "img" : "DOHS.png",
-        "link" : "http://www.dohsbaridhara.com/"
-        },{
-        "img" : "uttara_11.png",
-        "link" : "https://www.facebook.com/Uttara-11no-Sector-Kallyan-Samity-1590375364591003/"
-        },{
-        "img" : "uttara_14.png",
-        "link" : "https://www.facebook.com/groups/686404912058826/"
-        }]
-}]
+[
+    {
+        "type": "suppliers",
+        "title": "Our Principals",
+        "image-repo": "https://raw.githubusercontent.com/jitetb/jitetb.github.io/jekyll-source/static/logo/suppliers/",
+        "catalog-server": {
+            "suffix": "https://drive.google.com/file/d/",
+            "prefix": "/view?usp=sharing"
+        },
+        "list": [
+            {
+                "image": "fujihd.png",
+                "link": "https://www.fujihd.com/",
+                "title": "FujiHD",
+                "catalog": "1cOJQPO-7G5xd_drjQrm--lWeYmdS6UuJ"
+            },
+            {
+                "image": "movilift.png",
+                "link": "https://www.movilift.com/",
+                "title": "MoviLift",
+                "catalog": "1e8aAu1kpqoK3aLEGweEfXT4me-AFKfHt"
+            },
+            {
+                "image": "srl.png",
+                "link": "https://www.srlelevator.com/",
+                "title": "SRL",
+                "catalog": "133qlDgHkSi0ad6yyFktuzOT_KefcrLzn"
+            },
+            {
+                "image": "xiwei.png",
+                "link": "https://www.xiweielevator.com/",
+                "title": "XIWEI",
+                "catalog": "1i1qfJqBYbv63VhmQCOgwhxd02YUPv3wE"
+            },
+            {
+                "image": "hasasansor.png",
+                "link": "https://www.hasasansor.com.tr/",
+                "title": "HAS Elevator",
+                "catalog": "1r5EoDXaIxul-hqm1_wMyGKfIbHEgaGtL"
+            }
+        ]
+    },
+    {
+        "type": "customers",
+        "title": "Our Clients",
+        "image-repo": "https://raw.githubusercontent.com/jitetb/jitetb.github.io/jekyll-source/static/logo/customers/",
+        "list": [
+            {
+                "image": "world-bank.svg",
+                "link": "https://www.worldbank.org/en/country/bangladesh"
+            },
+            {
+                "image": "BGMEA.png",
+                "link": "https://www.bgmea.com.bd/"
+            },
+            {
+                "image": "Bashundhara-city.png",
+                "link": "http://www.bashundhara-city.com/"
+            },
+            {
+                "image": "DOHS.png",
+                "link": "http://www.dohsbaridhara.com/"
+            },
+            {
+                "image": "uttara_11.png",
+                "link": "https://www.facebook.com/Uttara-11no-Sector-Kallyan-Samity-1590375364591003/"
+            },
+            {
+                "image": "uttara_14.png",
+                "link": "https://www.facebook.com/groups/686404912058826/"
+            }
+        ]
+    }
+]
