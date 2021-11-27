@@ -37,7 +37,7 @@ function Home() {
         overflow: "hidden",
     };
     return (<>
-        <Container fluid style={{ height: "100vh" }}>
+        <Container fluid style={{ height: "inherit" }}>
             <Row className="justify-content-center" style={{ backgroundColor: "#D7E1E1", height: "50%", minHeight: "calc(380px / 2)" }}>
                 <p className="h1 text-center pt-5">Our Principals</p>
                 <Col sm={12} md={8} style={animation_style}>

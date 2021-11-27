@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 export default function Navigation({ routes, changeRoute }) {
 	var internal_links = routes.map(
@@ -11,21 +12,27 @@ export default function Navigation({ routes, changeRoute }) {
 			</button>
 		));
 	return (
-		<nav className="navbar navbar-light bg-light justify-content-end">
-			<span className="mb-auto">
-				<img src="favicon.svg" alt="jitetb logo" />
-				<p className="h1 text-center text-uppercase">jitetb</p>
-			</span>
-			<nav className="nav nav-pills">
-				{internal_links.slice(0, 3)}
-			</nav>
-			<nav className="nav nav-pills">
-				{internal_links.slice(3)}
-				<a className="nav-link"
-					href="https://forms.gle/Hvs7o597eUcurnhq8">
-					Get Price
-			</a>
-			</nav>
+
+		<nav className="navbar custom-expand navbar-light bg-light">
+			<div className="container">
+				<span className="navbar-brand">
+					<img src="favicon.svg" alt="" width="30" height="24" className="d-inline-block align-text-top" />
+					JITETB
+				</span>
+				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Navigation Menu">
+					<span className="navbar-toggler-icon"></span>
+				</button>
+				<div className="collapse navbar-collapse" id="navbarSupportedContent">
+					<nav className="navbar-nav nav-pills pt-3">
+						{internal_links}
+						<a className="nav-link"
+							href="https://forms.gle/Hvs7o597eUcurnhq8">
+							Get Price
+						</a>
+					</nav>
+				</div>
+			</div>
 		</nav>
+
 	)
 }

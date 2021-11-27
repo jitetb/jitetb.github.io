@@ -1,39 +1,64 @@
-@media only screen and (min-height: 480px) and (min-width: 600px){
-	#root {
-		display: flex !important;
-	}
-	#root>nav {
-		flex-direction: column;
-		height: 100vh !important;
-		padding: 1rem !important;
-	}
-	#root>div {
-		height: 100vh !important;
-	}
-}
-	/* 250px can accomodate upto 5 nav-items vertically in nav */
-	/* 360px can accomodate upto 10 nav-items vertically in nav */
-	/* 470px can accomodate upto 15 nav-items vertically in nav */
-@media only screen and (min-height: 600px) and (min-width: 328px){
+@media only screen and (max-width: 819px) {
 	:root {
-		--horizontal-navbar-height: 13rem;
+		--custom-nav-height: 3.5em;
 	}
+
 	#root>div {
-		overflow: auto scroll;
+		overflow: auto;
+		height: calc(100vh - var(--custom-nav-height));
+		/* Since fixed-top navbar is no longer in context */
+		margin-top: var(--custom-nav-height);
 	}
+
+	/* Bootstrap class fixed-top but responsive */
 	#root>nav {
-		height: var(--horizontal-navbar-height);
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
 	}
-	#root>div {
-		height: calc(100vh - var(--horizontal-navbar-height));
-		width: 100%;
+	.navbar-nav>a {
+		text-align: center;
 	}
 }
-@media only screen and (min-width: 328px){
-	#root>nav>span {
-		margin-right: auto !important;
+
+@media only screen and (min-width: 820px) {
+	:root {
+		--custom-nav-width: 240px;
 	}
-	#root>nav>nav {
-		flex-direction: column;
+
+	#root {
+		display: flex;
+	}
+
+	#root>div {
+		width: calc(100vw - var(--custom-nav-width));
+		overflow: auto;
+		height: 100vh;
+	}
+
+	.custom-expand {
+		width: var(--custom-nav-width);
+		height: 100vh;
+		/* bootstrap class align-content-between but responsive */
+		align-content: space-between;
+		overflow: auto;
+	}
+
+	.custom-expand .navbar-toggler {
+		display: none;
+	}
+
+	.custom-expand .navbar-collapse {
+		display: unset !important;
+		/* This will conflict align-content-between
+		overflow: auto;
+		height: calc(100vh - 4em);
+		*/
+	}
+
+	.custom-expand .navbar-nav>button {
+		text-align: unset;
 	}
 }
