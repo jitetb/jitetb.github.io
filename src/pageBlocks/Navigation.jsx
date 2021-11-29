@@ -13,6 +13,11 @@ export default class Navigation extends Component {
 			navbar_is_collapsed: this.state.navbar_is_collapsed ? false : true
 		});
 	}
+	CollapseNavbar() {
+		this.setState({
+			navbar_is_collapsed: false
+		});
+	}
 	render() {
 		var internal_links = this.props.routes.map(
 			({ title }, idx) => (
@@ -21,7 +26,7 @@ export default class Navigation extends Component {
 					className="nav-link"
 					onClick={() => {
 						this.props.changeRoute(idx);
-						this.toggleNavCollapse();
+						if(!this.state.navbar_is_collapsed) this.toggleNavCollapse();
 						}
 					}>
 					{title}
@@ -35,7 +40,7 @@ export default class Navigation extends Component {
 						<img src="favicon.svg" alt="" width="30" height="24" className="d-inline-block align-text-top" />
 					JITETB
 				</span>
-					<button className="navbar-toggler" type="button" onClick={this.toggleNavCollapse.bind(this)}>
+					<button className="navbar-toggler" type="button" onClick={() => this.toggleNavCollapse()}>
 						<span className="navbar-toggler-icon"></span>
 					</button>
 					<div className={this.state.navbar_is_collapsed ? "collapse navbar-collapse" : "collapse navbar-collapse show"}>

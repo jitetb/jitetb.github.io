@@ -37,7 +37,7 @@ export default class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			contentKey: 1
+			contentKey: 0
 		}
 	}
 	UpdateContent(currentContentKey) {
