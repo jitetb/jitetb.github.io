@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { suppliers } from './business_connections/profiles';
+import './catalog.css';
 
 function Catalog() {
     const list_of_partners = suppliers.map(
@@ -12,7 +13,7 @@ function Catalog() {
                         <Card.Body>
                             <Card.Title>&nbsp;{title}</Card.Title>
                             <Button variant="outline-warning" target="_blank" href={link}>Visit Site</Button>
-                            <Button variant="warning" target="_blank" href={catalog} className="ms-3">View Catalogue</Button>
+                            <Button variant="warning" target="_blank" href={catalog}>View Catalogue</Button>
                         </Card.Body>
                     </Card>
                 </Col>
