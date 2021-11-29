@@ -12,7 +12,7 @@ function Catalog() {
                         <Card.Body>
                             <Card.Title>&nbsp;{title}</Card.Title>
                             <Button variant="outline-warning" target="_blank" href={link}>Visit Site</Button>
-                            <Button variant="warning" target="_blank" href={catalog} className="ms-3">Download</Button>
+                            <Button variant="warning" target="_blank" href={catalog} className="ms-3">View Catalogue</Button>
                         </Card.Body>
                     </Card>
                 </Col>

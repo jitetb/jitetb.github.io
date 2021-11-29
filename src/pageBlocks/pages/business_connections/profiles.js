@@ -17,13 +17,13 @@ var suppliers = [
     "link": "https://www.srlelevator.com/",
     "title": "SRL",
     "catalog": "133qlDgHkSi0ad6yyFktuzOT_KefcrLzn"
-  },
+  },/* This entry is removed by marketing decisions
   {
     "image": "xiwei.png",
     "link": "https://www.xiweielevator.com/",
     "title": "XIWEI",
     "catalog": "1i1qfJqBYbv63VhmQCOgwhxd02YUPv3wE"
-  },
+  },*/
   {
     "image": "hasasansor.png",
     "link": "https://www.hasasansor.com.tr/",
@@ -35,6 +35,12 @@ var suppliers = [
     "link": "https://www.vitalasansor.com",
     "title": "VITAL Elevator",
     "catalog": "1eqqKYMmwHZ_MV6D5QHDOin2BLQozMxhz"
+  },
+  {
+    "image": "suxan.png",
+    "link": "https://www.sselift.com",
+    "title": "SUXAN Elevator",
+    "catalog": "1H0Ra4Ok4AzrnOWBZ0x_tf95KGtH07CCj"
   }
 ];
 
