@@ -4,7 +4,7 @@
     }
 
     to {
-        transform: translateX(calc((-16rem - 3rem) * 6));
+        transform: translateX(calc((-16rem - 3rem) * 5));
     }
 }
 
@@ -14,6 +14,6 @@
     }
 
     to {
-        transform: translateX(-112rem);
+        transform: translateX(-74rem);
     }
 }

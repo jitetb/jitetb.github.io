@@ -1,10 +1,18 @@
 /* title: "Our Principals" */
 var suppliers = [
+  /* This entry is removed by marketing decisions
   {
     "image": "fujihd.png",
     "link": "https://www.fujihd.com/",
     "title": "FujiHD",
     "catalog": "1cOJQPO-7G5xd_drjQrm--lWeYmdS6UuJ"
+  },
+  */
+  {
+    "image": "modun-express.png",
+    "link": "http://en.mdunks.com/",
+    "title": "Suzhou Modun Express",
+    "catalog": "1uNDVR2GkzinF0O250uBTz4YJu3z_KQ8k"
   },
   {
     "image": "movilift.png",
@@ -12,23 +20,27 @@ var suppliers = [
     "title": "Movi Lift",
     "catalog": "1e8aAu1kpqoK3aLEGweEfXT4me-AFKfHt"
   },
+  /* This entry is removed by marketing decisions
   {
     "image": "srl.png",
     "link": "https://www.srlelevator.com/",
     "title": "SRL",
     "catalog": "133qlDgHkSi0ad6yyFktuzOT_KefcrLzn"
-  },/* This entry is removed by marketing decisions
+  },
+  */
+  /* This entry is removed by marketing decisions
   {
     "image": "xiwei.png",
     "link": "https://www.xiweielevator.com/",
     "title": "XIWEI",
     "catalog": "1i1qfJqBYbv63VhmQCOgwhxd02YUPv3wE"
-  },*/
+  },
+  */
   {
     "image": "hasasansor.png",
     "link": "https://www.hasasansor.com.tr/",
     "title": "HAS Elevator",
-    "catalog": "1r5EoDXaIxul-hqm1_wMyGKfIbHEgaGtL"
+    "catalog": "1xkZBResNuiRhy1tg7dFJhSrC0X-Hjzf4"
   },
   {
     "image": "vitalasansor.png",
@@ -62,25 +74,36 @@ var customers = [
     "link": "http://www.bashundhara-city.com/"
   },
   {
+    "image": "mirpur-dohs.png",
+    "title": "Mirpur DOHS",
+    "link": "https://web.archive.org/web/20170813011127/http://mirpurdohs.net.bd/"
+  },
+  /* This entry is removed by marketing decisions
+  {
     "image": "DGDP.png",
     "title": "DGDP",
     "link": "https://dgdp.gov.bd/"
   },
+  */
   {
     "image": "DOHS.png",
-    "title": "DOHS",
+    "title": "DOHS Baridhara",
     "link": "http://www.dohsbaridhara.com/"
-  },
+  }//,
+  /* This entry is removed by marketing decisions
   {
     "image": "uttara-11.png",
     "title": "Uttara Sector 11 Kallyan Samity",
     "link": "https://www.facebook.com/Uttara-11no-Sector-Kallyan-Samity-1590375364591003/"
   },
+  */
+  /* This entry is removed by marketing decisions
   {
     "image": "uttara-14.png",
     "title": "Uttara Sector 14",
     "link": "https://www.facebook.com/groups/686404912058826/"
   }
+  */
 ];
 /*
 function bind_image_resource(partner, image_repo){
