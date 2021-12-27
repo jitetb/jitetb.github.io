@@ -1,12 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import './home.css';
-import Profiles from './business_connections/profiles';
-var suppliers = [...Profiles.suppliers, ...Profiles.suppliers];
-var customers = [...Profiles.customers, ...Profiles.customers];
-function Home() {
+function Home(props) {
 
-    const list_of_suppliers = suppliers.map(
+    const list_of_suppliers = props.suppliers.map(
         ({ image, link, title }, idx) => {
             return (
                 <a key={'home-suppliers' + title + idx} href={link} target="blank" style={{ marginRight: "3em" }}>
@@ -15,7 +12,7 @@ function Home() {
             );
         }
     );
-    const list_of_customers = customers.map(
+    const list_of_customers = props.customers.map(
         ({ image, link, title }, idx) => {
             return (
                 <a key={'home-customers' + title + idx} href={link} target="blank" style={{ marginRight: "3em" }}>

@@ -24,10 +24,7 @@ const pages = [
 		title: 'Contact',
 		id: 'contact'
 	},
-].map(page => {
-	page['content'] = require('./pageBlocks/pages/' + page.id + '.jsx').default;
-	return page;
-});
+];
 
 const routes = pages.map(
 	({ title }) => ({ title: title })
@@ -45,12 +42,14 @@ export default class App extends Component {
 			contentKey: currentContentKey
 		})
 	}
+	
 	render() {
-		let content = pages[this.state.contentKey].content;
 		return (
 			<React.Fragment>
 				<Navigation routes={routes} changeRoute={this.UpdateContent.bind(this)} />
-				<MainContent content={content} />
+				<MainContent>
+				  {pages[this.state.contentKey].id}
+				</MainContent>
 			</React.Fragment>
 		)
 	}

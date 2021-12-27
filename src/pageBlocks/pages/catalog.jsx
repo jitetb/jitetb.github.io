@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { suppliers } from './business_connections/profiles';
 
-function Catalog() {
-    const list_of_partners = suppliers.map(
+function Catalog(props) {
+    const list_of_partners = props.suppliers.map(
         ({ image, link, title, catalog }) => {
             return (
                 <Col key={'catalog' + title} sm={12} md={5} lg={4}>

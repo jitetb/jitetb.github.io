@@ -1,0 +1,101 @@
+{
+  "suppliers" : [
+    {
+      "image": "fujihd.png",
+      "link": "https://www.fujihd.com/",
+      "title": "FujiHD",
+      "catalog": "https://drive.google.com/file/d/1cOJQPO-7G5xd_drjQrm--lWeYmdS6UuJ/view?usp=sharing",
+      "removed": "This entry is removed by marketing decisions"
+    },
+    {
+      "image": "modun-express.png",
+      "link": "http://en.mdunks.com/",
+      "title": "Suzhou Modun Express",
+      "catalog": "https://drive.google.com/file/d/1uNDVR2GkzinF0O250uBTz4YJu3z_KQ8k/view?usp=sharing"
+    },
+    {
+      "image": "movilift.png",
+      "link": "https://www.movilift.com/",
+      "title": "Movi Lift",
+      "catalog": "https://drive.google.com/file/d/1e8aAu1kpqoK3aLEGweEfXT4me-AFKfHt/view?usp=sharing"
+    },
+    {
+      "image": "srl.png",
+      "link": "https://www.srlelevator.com/",
+      "title": "SRL",
+      "catalog": "https://drive.google.com/file/d/133qlDgHkSi0ad6yyFktuzOT_KefcrLzn/view?usp=sharing",
+      "removed": "This entry is removed by marketing decisions"
+    },
+    {
+      "image": "xiwei.png",
+      "link": "https://www.xiweielevator.com/",
+      "title": "XIWEI",
+      "catalog": "https://drive.google.com/file/d/1i1qfJqBYbv63VhmQCOgwhxd02YUPv3wE/view?usp=sharing",
+      "removed": "This entry is removed by marketing decisions"
+    },
+    {
+      "image": "hasasansor.png",
+      "link": "https://www.hasasansor.com.tr/",
+      "title": "HAS Elevator",
+      "catalog": "https://drive.google.com/file/d/1xkZBResNuiRhy1tg7dFJhSrC0X-Hjzf4/view?usp=sharing"
+    },
+    {
+      "image": "vitalasansor.png",
+      "link": "https://www.vitalasansor.com",
+      "title": "VITAL Elevator",
+      "catalog": "https://drive.google.com/file/d/1eqqKYMmwHZ_MV6D5QHDOin2BLQozMxhz/view?usp=sharing"
+    },
+    {
+      "image": "suxan.png",
+      "link": "https://www.sselift.com",
+      "title": "SUXAN Elevator",
+      "catalog": "https://drive.google.com/file/d/1H0Ra4Ok4AzrnOWBZ0x_tf95KGtH07CCj/view?usp=sharing"
+    }
+  ],
+  
+  "customers" : [
+    {
+      "image": "world-bank.svg",
+      "title": "World Bank",
+      "link": "https://www.worldbank.org/en/country/bangladesh"
+    },
+    {
+      "image": "BGMEA.png",
+      "title": "BGMEA",
+      "link": "https://www.bgmea.com.bd/"
+    },
+    {
+      "image": "Bashundhara-city.png",
+      "title": "Bashundhara City",
+      "link": "http://www.bashundhara-city.com/"
+    },
+    {
+      "image": "mirpur-dohs.png",
+      "title": "Mirpur DOHS",
+      "link": "https://web.archive.org/web/20170813011127/http://mirpurdohs.net.bd/"
+    },
+    {
+      "image": "DGDP.png",
+      "title": "DGDP",
+      "link": "https://dgdp.gov.bd/",
+      "removed": "This entry is removed by marketing decisions"
+    },
+    {
+      "image": "DOHS.png",
+      "title": "DOHS Baridhara",
+      "link": "http://www.dohsbaridhara.com/"
+    },
+    {
+      "image": "uttara-11.png",
+      "title": "Uttara Sector 11 Kallyan Samity",
+      "link": "https://www.facebook.com/Uttara-11no-Sector-Kallyan-Samity-1590375364591003/",
+      "removed": "This entry is removed by marketing decisions"
+    },
+    {
+      "image": "uttara-14.png",
+      "title": "Uttara Sector 14",
+      "link": "https://www.facebook.com/groups/686404912058826/",
+      "removed": "This entry is removed by marketing decisions"
+    }
+  ]
+}
