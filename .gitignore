@@ -1,3 +1,4 @@
 # dependencies
-/node_modules
+node_modules/
+# auto-generated
 package-lock.json
