@@ -1,28 +1,15 @@
 import React,{createElement as e,useState,useEffect} from 'react';
 import { Container } from 'react-bootstrap';
-
+import profiler from "./dataFactory.js";
 
 export default function MainContent(props) {
   var [Profiles, setProfiles] = useState([]);
-  function absoluteImageSource(dataSet,dataType,dataSource) {
-    return dataSet[dataType].filter(p=>!p.removed).map(p=>{
-      p.image = dataSource + dataType + '/' + p.image;
-      return p;
-    });
-  }
+  
   function getProfiles() {
-    const url = "https://jitetb.github.io/assets/";
-    fetch(url + "profiles.json", {
-      headers : {
-        'Content-Type' : 'application/json',
-        'Accept' : 'application/json'
-      }
-    }).then(response => response.json()).then(data => {
-      const suppliers = absoluteImageSource(data,'suppliers',url);
-      const customers = absoluteImageSource(data,'customers',url);
+    profiler().then(data => {
       return setProfiles({
-        suppliers: suppliers,
-        customers: customers
+        suppliers: data.suppliers,
+        customers: data.customers
       });
     })
   }
