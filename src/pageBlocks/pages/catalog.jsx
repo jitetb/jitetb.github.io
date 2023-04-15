@@ -7,7 +7,7 @@ function Catalog(props) {
             return (
                 <Col key={'catalog' + title} sm={12} md={5} lg={4}>
                     <Card className="m-3">
-                        <a href={catalog}><Card.Img src={image} variant="top" alt={title} /></a>
+                        <a href={catalog} target='_blank'><Card.Img src={image} variant="top" alt={title} /></a>
                         <Card.Body>
                             <Card.Title>&nbsp;{title}</Card.Title>
                             <Button variant="outline-warning" target="_blank" href={link} 

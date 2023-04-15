@@ -1,3 +1,8 @@
+/*
+= Human readable data source =
+https://docs.google.com/spreadsheets/d/e/2PACX-1vSNVzKXaej44S0TCZOf3kk5dn708yQh4cmzgSgE5bqloM8cpejujkIaWEM_HwUofh3RxuHc__-qyy76/pubhtm
+*/
+
 const suppliers_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSNVzKXaej44S0TCZOf3kk5dn708yQh4cmzgSgE5bqloM8cpejujkIaWEM_HwUofh3RxuHc__-qyy76/pub?gid=0&single=true&output=csv",
 	customers_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSNVzKXaej44S0TCZOf3kk5dn708yQh4cmzgSgE5bqloM8cpejujkIaWEM_HwUofh3RxuHc__-qyy76/pub?gid=504983115&single=true&output=csv";
 
