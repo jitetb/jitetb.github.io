@@ -12,6 +12,7 @@ function Home(props) {
             );
         }
     );
+    let suppliers_count = props.suppliers.length / 2;
     const list_of_customers = props.customers.map(
         ({ image, link, title }, idx) => {
             return (
@@ -23,12 +24,13 @@ function Home(props) {
     );
 
     const suppliers_animation = {
+        "--suppliersCount" : suppliers_count,
         whiteSpace: "nowrap",
-        animation: "suppliers-animation 15s linear 1s infinite"
+        animation: "suppliers-animation " + (suppliers_count * 3) + "s linear 1s infinite"
     };
     const customers_animation = {
         whiteSpace: "nowrap",
-        animation: "customers-animation 15s linear 1s infinite"
+        animation: "customers-animation " + 15 + "s linear 1s infinite"
     };
     const animation_style = {
         overflow: "hidden",

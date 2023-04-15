@@ -4,7 +4,7 @@
     }
 
     to {
-        transform: translateX(calc((-16rem - 3rem) * 5));
+        transform: translateX(calc((-16rem - 3rem) * var(--suppliersCount)));
     }
 }
 
