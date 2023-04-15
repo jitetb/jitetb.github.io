@@ -47,7 +47,7 @@ export default class Navigation extends Component {
 						<nav className="navbar-nav nav-pills pt-3">
 							{internal_links}
 							<a className="nav-link"
-								href="https://forms.gle/Hvs7o597eUcurnhq8">
+								href="form.html">
 								Get Price
 						</a>
 						</nav>

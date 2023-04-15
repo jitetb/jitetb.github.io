@@ -15,6 +15,9 @@
     "prebuild": "[ ! -d 'docs' ] || mv docs build",
     "build": "react-scripts build",
     "postbuild": "mv build docs",
+    "prebuild:win" : "ren docs build",
+    "build:win": "react-scripts build",
+    "postbuild:win" : "ren build docs",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
