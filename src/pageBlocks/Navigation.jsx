@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-//import 'bootstrap/dist/js/bootstrap.min.js';
-
+import { Link } from 'react-router-dom';
 export default class Navigation extends Component {
 	constructor(props) {
 		super(props);
@@ -20,26 +19,22 @@ export default class Navigation extends Component {
 	}
 	render() {
 		var internal_links = this.props.routes.map(
-			({ title }, idx) => (
-				<button
+			({ title, id }, idx) => (
+				<Link
 					key={'anchor' + title}
 					className="nav-link"
-					onClick={() => {
-						this.props.changeRoute(idx);
-						if(!this.state.navbar_is_collapsed) this.toggleNavCollapse();
-						}
-					}>
+					to={id}>
 					{title}
-				</button>
+				</Link>
 			));
 		return (
 
 			<nav className="navbar custom-expand navbar-light bg-light">
 				<div className="container">
 					<span className="navbar-brand">
-						<img src="favicon.svg" alt="" width="30" height="24" className="d-inline-block align-text-top" />
-					JITETB
-				</span>
+						<img src="/favicon.svg" alt="" width="30" height="24" className="d-inline-block align-text-top" />
+						JITETB
+					</span>
 					<button className="navbar-toggler" type="button" onClick={() => this.toggleNavCollapse()}>
 						<span className="navbar-toggler-icon"></span>
 					</button>
@@ -49,7 +44,7 @@ export default class Navigation extends Component {
 							<a className="nav-link"
 								href="form.html">
 								Get Price
-						</a>
+							</a>
 						</nav>
 					</div>
 				</div>

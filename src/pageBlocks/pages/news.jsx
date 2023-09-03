@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+
 const news = [
     {
     "heading": "Elevator Analysis and Monitoring Tester",
@@ -17,7 +18,7 @@ const news = [
 
 const blog = news.map(
     ({ heading, image, title, body }, idx) => {
-        const image_object = require("./news_images/" + image);
+        const image_object = "/assets/news_images/" + image;
         return (
         <Row key={title + idx} className="pb-5 justify-content-center">
             <Col xs={8} sm={3} className="pb-3">
