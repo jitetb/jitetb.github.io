@@ -42,11 +42,13 @@ const routes = [
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <>
-	<App routes={routes.map(({path}) => ({title: path, id: path}))}/>
-	<Navigate to='/home' replace/>
-	</>,
-    children: routes
+    element: <App routes={routes.map(({path}) => path)}/>,
+    children: [
+		{
+			index: true,
+			element: <Navigate to='home' />
+		},
+		...routes]
   }
 ]);
 

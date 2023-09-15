@@ -19,12 +19,13 @@ export default class Navigation extends Component {
 	}
 	render() {
 		var internal_links = this.props.routes.map(
-			({ title, id }, idx) => (
+			route => (
 				<Link
-					key={'anchor' + title}
+					style={{'text-transform' : 'capitalize'}}
+					key={'anchor' + route}
 					className="nav-link"
-					to={id}>
-					{title}
+					to={route}>
+					{route}
 				</Link>
 			));
 		return (
